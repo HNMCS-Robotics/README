@@ -314,32 +314,26 @@ When you are ready to push your changes to GitHub, there are a few steps to that
 Here are all the that you would type in your terminal to complete all of those steps:
 
 **Make sure that you are within the directory of your file that you would like to push**
+
 _Commands that begins with # are comments. Do not type them into your terminal_
 
 ```
-  # *Optional* Check Git Status - files that are unstaged will be coloured red; files that are staged will be coloured green
+  # *Optional* Check Git Status - files that are unstaged will be coloured red;
+  # files that are staged will be coloured green
 git status
-```
 
-```
   # Add helloWorld.java to the staging environment; replace it with your file name
 git add helloWorld.java
 
   # Add all files that are unstaged
 git add .
-```
 
-```
   # *Optional* Check Git Status - your files should be coloured green as they are staged
 git status
-```
 
-```
   # Commit and add commit message
 git commit -m "Modified to print 'hello world!'"
-```
 
-```
   # Push your files to the default remote named 'origin' and default branch named 'main'
 git push origin main
 ```
