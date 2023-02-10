@@ -139,9 +139,9 @@ First, we need to see if you have an Ed25519 algorithm SSH key already installed
      
 You need to tell GitHub what your SSH Key is so that you can push your code without typing in a password every time.
       
-*First, you’ll navigate to where GitHub receives our SSH key. Log into GitHub and click on your profile picture in the top right corner. Then, click on ***Settings*** in the drop-down menu.
+* First, you’ll navigate to where GitHub receives our SSH key. Log into GitHub and click on your profile picture in the top right corner. Then, click on **Settings** in the drop-down menu.
 
-*Next, on the left-hand side, click ***SSH and GPG keys***. Then, click the green button in the top right corner that says ***New SSH Key***. Name your key something that is descriptive enough for you to remember where it came from. Leave this window open while you do the next steps.  
+* Next, on the left-hand side, click **SSH and GPG keys**. Then, click the green button in the top right corner that says **New SSH Key**. Name your key something that is descriptive enough for you to remember where it came from. Leave this window open while you do the next steps.  
 
   
   Now you need to copy your public SSH key. To do this, we’re going to use a command called ***cat*** to read the file to the console. (Note that the .pub file extension is important in this case.)
@@ -152,7 +152,7 @@ You need to tell GitHub what your SSH Key is so that you can push your code with
   
   Highlight and copy the output, which starts with ssh-ed25519 and ends with your email address.
 
-Now, go back to GitHub in your browser window and paste the key you copied into the key field. Then, click ***Add SSH key***. You’re done! You’ve successfully added your SSH key!
+Now, go back to GitHub in your browser window and paste the key you copied into the key field. Then, click **Add SSH key**. You’re done! You’ve successfully added your SSH key!
       
 </p>
 </details>
