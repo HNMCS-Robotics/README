@@ -318,38 +318,41 @@ Reference: [Git Staging Environment - w3schools](https://www.w3schools.com/git/g
 For example, let's say you are done working with _index.html_.
 
 Any unstaged files will appear red when you check the **git status**.
-
     
-    git add index.html
+```
+git add index.html
+```
     
-
 This file should be Staged and therefore appear green. Let's check the status:
-
-    ```
-    git status
-    ```
+ 
+``` 
+git status
+```
+    
 
 And it should return:
 
-    ```
-    On branch main
+```
+On branch main
 
-    No commits yet
+No commits yet
 
-    Changes to be committed:
-    (use "git rm --cached ..." to unstage)
-    new file: index.html
-    ```
+Changes to be committed:
+(use "git rm --cached ..." to unstage)
+new file: index.html
+```
+
 
 #### Commit your changes
 
 Reference: [Git Commit - w3shools](https://www.w3schools.com/git/git_commit.asp?remote=github)
 
-Type the following command to commit ALL the staged files and to write a commit message.
+Type the following command to commit ALL the staged files and to write a commit message. *Replace the message within the quotation marks with a message that reflects your own changes*
 
-    ```
-    git commit -m "Modified index.html"
-    ```
+```
+git commit -m "Modified index.html"
+```
+    
 
 The **_commit_** command performs a commit, and the **_-m "message"_** adds a message.
 
@@ -370,9 +373,9 @@ git push REMOTE-NAME BRANCH-NAME
 
 As an example, you usually run **git push origin main** to push your local changes to your online repository.
 
-    ```
-    git push origin main
-    ```
+```
+git push origin main
+```
 
   </p>
 
