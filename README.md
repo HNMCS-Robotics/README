@@ -26,7 +26,7 @@ This file will highlight some basic GitHub etiquette, rules and basic instructio
   * Write the following command
 
 ```
-$ git --version
+git --version
 ```
 
 **If it outputs a version number for your git, it means that you have git on your computer! Otherwise, follow the instructions below to install Git.**
@@ -50,7 +50,7 @@ Please follow this link to download Git on your computer. [Download Git](https:/
 - If trying $ git --version shows a pop-up window asking you to download xcode command line tools. You would have to install it first to proceed by clicking the ‘install’ button. Or input this command in your terminal:
 
 ```
-$ xcode-select --install
+xcode-select --install
 ```
 
 - Please follow the instructions on this link to download Git on your computer. [Download Git](https://git-scm.com/download/mac)
@@ -73,7 +73,7 @@ Create or login to your GitHub Account [here](https://github.com/login) .
 
 Instructions reference:
 
-[Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git)
+[Setting up Git - The Odin Project](https://www.theodinproject.com/lessons/foundations-setting-up-git)
 
 For Git to work properly, we need to let the Git know who we are so that it can link a local Git user (you) to GitHub. When working on a team, this allows people to see what you have committed and who committed each line of code.
 
@@ -228,7 +228,7 @@ When you clone a repository, you are "pulling" a full copy of all the data of th
 7. Press **Enter** to create your local clone.
 
    ```
-   $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
    > Cloning into `Spoon-Knife`...
    > remote: Counting objects: 10, done.
    > remote: Compressing objects: 100% (8/8), done.
@@ -249,10 +249,10 @@ If you have existing source code or repositories stored locally on your computer
 
 Reference: [Adding locally hosted code to GitHub - GitHub Docs](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github)
 
-1. Create a new repository if you have not already. *If you have trouble with this, you can refer to the previous steps under this section of "Git Work Flow"*
+1. Create a new repository if you have not already. _If you have trouble with this, you can refer to the previous steps under this section of "Git Work Flow"_
 2. Open Terminal.
 3. Change the current working directory to your local project.
-4. Use the init command to initialize the local directory as a Git repository. By default, the initial branch is called main. 
+4. Use the init command to initialize the local directory as a Git repository. By default, the initial branch is called main.
 
 If you’re using Git 2.28.0 or a later version, you can set the name of the default branch using -b.
 
@@ -266,24 +266,25 @@ If you’re using Git 2.27.1 or an earlier version, you can set the name of the 
 git init && git symbolic-ref HEAD refs/heads/main
 ```
 
-5. Copy the SSH Key from your repository on GitHub. 
-6. In the terminal, add the SSH Key where your projects will be pushed. 
+5. Copy the SSH Key from your repository on GitHub.
+6. In the terminal, add the SSH Key where your projects will be pushed.
 
 ```
-$ git remote add origin <REMOTE_URL>
+git remote add origin <REMOTE_URL>
    # Sets the new remote
-$ git remote -v
+git remote -v
    # Verifies the new remote URL
 ```
 
-7. Add the files in your local directory. 
+7. Add the files in your local directory.
 
 ```
 git add .
+```
+
+8. Commit the files that you've staged in your local repository.
 
 ```
-8. Commit the files that you've staged in your local repository.
-``` 
 git commit -m "First Commit"
 ```
 
@@ -297,7 +298,87 @@ git push -u origin main
 
 </details>
 
-<details><summary></summary>
+<details><summary>Stage, Commit & Push your changes to GitHub</summary>
+  <p>
+  
+### Stage, Commit & Push your changes to GitHub
+
+When you are ready to push your changes to GitHub, there are a few steps to that you have to complete in order to "push" your changes. Do not worry, these steps and commands become very intuitive once you are used to working with Git and GitHub. The steps are as follow:
+
+- Stage - Staged files are files that are ready to be committed to the repository you are working on. As you are working, you may be adding, editing and removing files. But whenever you hit a milestone or finish a part of the work, it is a good habit to add the files to a Staging Environment.
+
+- Commit - Since we have finished our work, we are ready move from stage to commit for our repo. When we commit, we should always include a message that is clear for both yourself and others to see what has changed and when.
+
+- Push - Pushing your commited changes to your GitHub repository!
+
+#### Stage your changes
+
+Reference: [Git Staging Environment - w3schools](https://www.w3schools.com/git/git_staging_environment.asp?remote=github)
+
+For example, let's say you are done working with _index.html_.
+
+\*Any unstaged files will appear red when you check the **_git status._**
+
+    ```
+    git add index.html
+    ```
+
+This file should be Staged and therefore appear green. Let's check the status:
+
+    ```
+    git status
+    ```
+
+And it should return:
+
+    ```
+    On branch main
+
+    No commits yet
+
+    Changes to be committed:
+    (use "git rm --cached ..." to unstage)
+    new file: index.html
+    ```
+
+#### Commit your changes
+
+Reference: [Git Commit - w3shools](https://www.w3schools.com/git/git_commit.asp?remote=github)
+
+Type the following command to commit ALL the staged files and to write a commit message.
+
+    ```
+    git commit -m "Modified index.html"
+    ```
+
+The **_commit_** command performs a commit, and the **_-m "message"_** adds a message.
+
+#### Push your changes
+
+Reference: [Pushing commits to a remote repository - GitHub Docs](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository)
+
+The git push command takes two arguments:
+
+- A remote name, for example, **origin**
+- A branch name, for example, **main**
+
+For example:
+
+```
+git push REMOTE-NAME BRANCH-NAME
+```
+
+As an example, you usually run **git push origin main** to push your local changes to your online repository.
+
+    ```
+    git push origin main
+    ```
+
+  </p>
+
+</details>
+
+<details><summary>Pull changes to local computer</summary>
   <p>
 
   </p>
