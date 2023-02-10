@@ -2,7 +2,9 @@
 This file will highlight some basic GitHub etiquette, rules and basic instructions.
 
 **Originall written on:** Feb 10, 2023 by Sabrina Fang '23 @sbrn8
+
 **Other Contributers:** 
+
 **EDITs (Latest) on:** *Add edit dates here*
 
 ## Why should I use GitHub
