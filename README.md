@@ -311,6 +311,39 @@ When you are ready to push your changes to GitHub, there are a few steps to that
 
 - Push - Pushing your commited changes to your GitHub repository!
 
+Here are all the that you would type in your terminal to complete all of those steps:
+
+**Make sure that you are within the directory of your file that you would like to push**
+_Commands that begins with # are comments. Do not type them into your terminal_
+
+```
+  # *Optional* Check Git Status - files that are unstaged will be coloured red; files that are staged will be coloured green
+git status
+```
+
+```
+  # Add helloWorld.java to the staging environment; replace it with your file name
+git add helloWorld.java
+
+  # Add all files that are unstaged
+git add .
+```
+
+```
+  # *Optional* Check Git Status - your files should be coloured green as they are staged
+git status
+```
+
+```
+  # Commit and add commit message
+git commit -m "Modified to print 'hello world!'"
+```
+
+```
+  # Push your files to the default remote named 'origin' and default branch named 'main'
+git push origin main
+```
+
 #### Stage your changes
 
 Reference: [Git Staging Environment - w3schools](https://www.w3schools.com/git/git_staging_environment.asp?remote=github)
@@ -318,17 +351,16 @@ Reference: [Git Staging Environment - w3schools](https://www.w3schools.com/git/g
 For example, let's say you are done working with _index.html_.
 
 Any unstaged files will appear red when you check the **git status**.
-    
+
 ```
 git add index.html
 ```
-    
+
 This file should be Staged and therefore appear green. Let's check the status:
- 
-``` 
+
+```
 git status
 ```
-    
 
 And it should return:
 
@@ -342,17 +374,15 @@ Changes to be committed:
 new file: index.html
 ```
 
-
 #### Commit your changes
 
 Reference: [Git Commit - w3shools](https://www.w3schools.com/git/git_commit.asp?remote=github)
 
-Type the following command to commit ALL the staged files and to write a commit message. *Replace the message within the quotation marks with a message that reflects your own changes*
+Type the following command to commit ALL the staged files and to write a commit message. _Replace the message within the quotation marks with a message that reflects your own changes_
 
 ```
 git commit -m "Modified index.html"
 ```
-    
 
 The **_commit_** command performs a commit, and the **_-m "message"_** adds a message.
 
