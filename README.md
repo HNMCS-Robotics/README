@@ -1,7 +1,7 @@
 ### READ ME 
 This file will highlight some basic GitHub etiquette, rules and basic instructions.
 
-**Originall written on:** Feb 10, 2023 by Sabrina Fang '23 @sbrn8
+**Originall written on:** Feb 10, 2023 by Sabrina Fang '23 @github/sbrn8
 
 **Other Contributers:** 
 
@@ -15,7 +15,15 @@ This file will highlight some basic GitHub etiquette, rules and basic instructio
 ## Instructions
 
 <details><summary>Install Git</summary>
-  #### HELLO
+  Check if you have git:
+  
+  * Open Terminal (MacOS) or PowerShell (Windows)
+  * Write the following command
+
+  ```
+  $ git --version
+  ```
+ ***If it outputs a version number for your git, it means that you have git on your computer!      Otherwise, follow the instructions below to install Git.*** 
   
   </p>
 </details>
