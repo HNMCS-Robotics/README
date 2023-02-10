@@ -137,15 +137,15 @@ First, we need to see if you have an Ed25519 algorithm SSH key already installed
 <details><summary>Step 2.3 - Link SSH Key with GitHub </summary>
     <p>
      
-      You need to tell GitHub what your SSH Key is so that you can push your code without typing in a password every time.
+You need to tell GitHub what your SSH Key is so that you can push your code without typing in a password every time.
       
-      First, you’ll navigate to where GitHub receives our SSH key. Log into GitHub and click on your profile picture in the top right corner. Then, click on ***Settings*** in the drop-down menu.
+First, you’ll navigate to where GitHub receives our SSH key. Log into GitHub and click on your profile picture in the top right corner. Then, click on ***Settings*** in the drop-down menu.
       
     </p>
 </details>
   
 <details><summary>Step 3 -  </summary>
-   <p>
+     <p>
 
     </p>
 </details>
