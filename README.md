@@ -317,11 +317,11 @@ Reference: [Git Staging Environment - w3schools](https://www.w3schools.com/git/g
 
 For example, let's say you are done working with _index.html_.
 
-\*Any unstaged files will appear red when you check the **_git status._**
+Any unstaged files will appear red when you check the **git status**.
 
-    ```
+    
     git add index.html
-    ```
+    
 
 This file should be Staged and therefore appear green. Let's check the status:
 
