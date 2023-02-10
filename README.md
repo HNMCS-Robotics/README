@@ -38,77 +38,82 @@ $ git --version
 
 <details><summary>Step 1 - Install Git</summary>
   <p>
-  
-  **Windows Users:** 
-  
-  Please follow this link to download Git on your computer. [Download Git](https://git-scm.com/downloads)
-  
-  
-  **MacOS USers:**  
-  
-  * If trying $ git --version shows a pop-up window asking you to download xcode command line tools. You would have to install it first to proceed by clicking the ‘install’ button. Or input this command in your terminal: 
-  ```
-  $ xcode-select --install
-  ```
-  
-  * Please follow the instructions on this link to download Git on your computer. [Download Git](https://git-scm.com/download/mac)
+
+### Instal Git
+
+**Windows Users:**
+
+Please follow this link to download Git on your computer. [Download Git](https://git-scm.com/downloads)
+
+**MacOS USers:**
+
+- If trying $ git --version shows a pop-up window asking you to download xcode command line tools. You would have to install it first to proceed by clicking the ‘install’ button. Or input this command in your terminal:
+
+```
+$ xcode-select --install
+```
+
+- Please follow the instructions on this link to download Git on your computer. [Download Git](https://git-scm.com/download/mac)
   </p>
 </details>
 
 <details><summary> Step 2.0 - Create GitHub Account</summary>
-  
-  
-  Create or login to your GitHub Account [here](https://github.com/login) .
-  
+
+### Create GitHub Account
+
+Create or login to your GitHub Account [here](https://github.com/login) .
+
   </p>
 </details>
 
 <details><summary>Step 2.1 - Configure Git with GitHub</summary>
   <p>
- Instructions reference: 
- 
- [Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git)
-  
+
+### Configure Git with GitHub
+
+Instructions reference:
+
+[Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git)
+
 For Git to work properly, we need to let the Git know who we are so that it can link a local Git user (you) to GitHub. When working on a team, this allows people to see what you have committed and who committed each line of code.
-  
-  The commands below will configure Git. ***Be sure to enter your own information within those quotation marks!***
-  
-  ```
-  git config --global user.name "Your Name"
-  git config --global user.email "yourname@example.com"
-  ```
-  
-  GitHub has changed its default branch from **masters** to **main**. Change the default branch for Git using this command:
-  
-  ```
-  git config --global init.defaultBranch main
-  ```
-  
-  Set your default branch reconciliation behavior to merging.
-  
-  ```
-  git config --global pull.rebase false
-  ```
-  
-  **Optional but helpful commands**
-  
+
+The commands below will configure Git. **_Be sure to enter your own information within those quotation marks!_**
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "yourname@example.com"
+```
+
+GitHub has changed its default branch from **masters** to **main**. Change the default branch for Git using this command:
+
+```
+git config --global init.defaultBranch main
+```
+
+Set your default branch reconciliation behavior to merging.
+
+```
+git config --global pull.rebase false
+```
+
+**Optional but helpful commands**
+
     To enable colorful output with git, type:
-  
-  ```
-  git config --global color.ui auto
-  ```
-  
-  ***Verify that things are working properly***
-  
-  Enter these commands and verify whether the output matches your name and email address.
-  
-  ```
-  git config --get user.name
-  git config --get user.email
-  ```
-  
-  
-  ***For Mac Users***
+
+```
+git config --global color.ui auto
+```
+
+**_Verify that things are working properly_**
+
+Enter these commands and verify whether the output matches your name and email address.
+
+```
+git config --get user.name
+git config --get user.email
+```
+
+**_For Mac Users_**
 
 Run these two commands to tell git to ignore .DS_Store files, which are automatically created when you use Finder to look into a folder. .DS_Store files are invisible to the user and hold custom attributes or metadata (like thumbnails) for the folder, and if you don’t configure Git to ignore them, pesky .DS_Store files will show up in your commits.
 
@@ -123,35 +128,39 @@ git config --global core.excludesfile ~/.gitignore_global
 <details><summary>Step 2.2 - Create an SSH Key </summary> 
   <p>
   
+### Create an SSH Key
+
 An SSH key is a cryptographically secure identifier. It’s like a really long password used to identify your machine. GitHub uses SSH keys to allow you to upload to your repository without having to type in your username and password every time.
-  
+
 First, we need to see if you have an Ed25519 algorithm SSH key already installed. Type this into the terminal and check the output with the information below:
-  
-  ```
-  ls ~/.ssh/id_ed25519.pub
-  ```
-  
-  If a message appears in the console containing the text “No such file or directory”, then you do not yet have an Ed25519 SSH key, and you will need to create one. If no such message has appeared in the console output, you can proceed to step 2.3 .
-  
-  ***Note:*** The angle brackets (< >) in the code snippet below indicate that you should replace that part of the command with the appropriate information. 
-  
-  ```
-  ssh-keygen -t ed25519 -C <youremail>
-  # When it prompts you for a location to save the generated key, just push Enter.
-  # Next, it will ask you for a password; enter one if you wish, but it’s not required.
-  ```
-    
+
+```
+ls ~/.ssh/id_ed25519.pub
+```
+
+If a message appears in the console containing the text “No such file or directory”, then you do not yet have an Ed25519 SSH key, and you will need to create one. If no such message has appeared in the console output, you can proceed to step 2.3 .
+
+**_Note:_** The angle brackets (< >) in the code snippet below indicate that you should replace that part of the command with the appropriate information.
+
+```
+ssh-keygen -t ed25519 -C <youremail>
+# When it prompts you for a location to save the generated key, just push Enter.
+# Next, it will ask you for a password; enter one if you wish, but it’s not required.
+```
+
   </p>
 </details>
 
 <details><summary>Step 2.3 - Link SSH Key with GitHub </summary>
 <p>
-     
-You need to tell GitHub what your SSH Key is so that you can push your code without typing in a password every time.
-      
-* First, you’ll navigate to where GitHub receives our SSH key. Log into GitHub and click on your profile picture in the top right corner. Then, click on **Settings** in the drop-down menu.
 
-- Next, on the left-hand side, click **SSH and GPG keys**. Then, click the green button in the top right corner that says **New SSH Key**. Name your key something that is descriptive enough for you to remember where it came from. Leave this window open while you do the next steps.
+### Link SSH Key with GitHub
+
+You need to tell GitHub what your SSH Key is so that you can push your code without typing in a password every time.
+
+- First, you’ll navigate to where GitHub receives our SSH key. Log into GitHub and click on your profile picture in the top right corner. Then, click on **Settings** in the drop-down menu.
+
+* Next, on the left-hand side, click **SSH and GPG keys**. Then, click the green button in the top right corner that says **New SSH Key**. Name your key something that is descriptive enough for you to remember where it came from. Leave this window open while you do the next steps.
 
   Now you need to copy your public SSH key. To do this, we’re going to use a command called **_cat_** to read the file to the console. (Note that the .pub file extension is important in this case.)
 
@@ -170,9 +179,12 @@ Now, go back to GitHub in your browser window and paste the key you copied into 
 
 <details><summary>Create a remote repository on GitHub </summary>
   <p>
+
+### Create a remote repository on GitHub
+
 To put your projects up on GitHub, you will need to create a repository for it to live in.
 
-[Instructions](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+[GitHub Instructions](https://docs.github.com/en/get-started/quickstart/create-a-repo)
 
 **Note**
 You **should not** create a README file if you wish to upload projects from your local computer to GitHub, therefore you should leave it unchecked. You can read more about it under ''.
@@ -183,14 +195,14 @@ You **should not** create a README file if you wish to upload projects from your
 
 <details><summary>Clone remote repository to Local Computer</summary>
   <p>
-  
+
 When you create a repository on GitHub, it exists as a remote repository. You can clone your repositories to create a local copy on your computer and sync between the two locations.
 
 When you clone a repository, you are "pulling" a full copy of all the data of the repository that GitHub has. You can clone your own existing repository or clone antoher person's existing repository to contribute to a project.
 
 **The following steps works for both empty repositories and repositories with existing files.**
 
-## Clone a repository
+### Clone a repository
 
 [Instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
