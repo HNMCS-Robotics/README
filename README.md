@@ -12,7 +12,7 @@ This file will highlight some basic GitHub etiquette, rules and basic instructio
 2. **Showcase your work** By consistently publishing your work to GitHub, you are essentially creating a portfolio of all your projects! Today, most companies (even universities) look into GitHub profiles when searching for new recruits. 
 3. **Version Control** When a group is colloaborating on a project, it become difficult to track changes, when the changes were made, and where they are stored. GitHub takes care of this all by keeping track of all the changes that have been pushed to the repository. Similar to using Google Drive,  you can have a version history of your code so that the previous version are not lost with every iteration. 
 
-## Instructions
+## Setup Instructions
 <details><summary>Step 0 - Check if you have Git</summary>
   <p>
   
