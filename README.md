@@ -39,7 +39,7 @@ $ git --version
 <details><summary>Step 1 - Install Git</summary>
   <p>
 
-### Instal Git
+### Install Git
 
 **Windows Users:**
 
@@ -242,6 +242,56 @@ When you clone a repository, you are "pulling" a full copy of all the data of th
 
 <details><summary>Upload local projects to GitHub</summary>
   <p>
+
+### Upload local projects to GitHub
+
+If you have existing source code or repositories stored locally on your computer, you can add them to GitHub by typing commands in a terminal. You can do this by typing Git commands directly.
+
+Reference: [Adding locally hosted code to GitHub - GitHub Docs](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github)
+
+1. Create a new repository if you have not already. *If you have trouble with this, you can refer to the previous steps under this section of "Git Work Flow"*
+2. Open Terminal.
+3. Change the current working directory to your local project.
+4. Use the init command to initialize the local directory as a Git repository. By default, the initial branch is called main. 
+
+If you’re using Git 2.28.0 or a later version, you can set the name of the default branch using -b.
+
+```
+git init -b main
+```
+
+If you’re using Git 2.27.1 or an earlier version, you can set the name of the default branch using this command:
+
+```
+git init && git symbolic-ref HEAD refs/heads/main
+```
+
+5. Copy the SSH Key from your repository on GitHub. 
+6. In the terminal, add the SSH Key where your projects will be pushed. 
+
+```
+$ git remote add origin <REMOTE_URL>
+   # Sets the new remote
+$ git remote -v
+   # Verifies the new remote URL
+```
+
+7. Add the files in your local directory. 
+
+```
+git add .
+
+```
+8. Commit the files that you've staged in your local repository.
+``` 
+git commit -m "First Commit"
+```
+
+9. Push the files from your local repository to GitHub
+
+```
+git push -u origin main
+```
 
   </p>
 
