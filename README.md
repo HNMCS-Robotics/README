@@ -13,9 +13,7 @@ This file will highlight some basic GitHub etiquette, rules and basic instructio
 3. **Version Control** When a group is colloaborating on a project, it become difficult to track changes, when the changes were made, and where they are stored. GitHub takes care of this all by keeping track of all the changes that have been pushed to the repository. Similar to using Google Drive,  you can have a version history of your code so that the previous version are not lost with every iteration. 
 
 ## Instructions
-
-<details><summary>Install Git</summary>
-  Check if you have git:
+<details><summary>Step 1 - Check if you have Git</summary>
   
   * Open Terminal (MacOS) or PowerShell (Windows)
   * Write the following command
@@ -23,8 +21,28 @@ This file will highlight some basic GitHub etiquette, rules and basic instructio
   ```
   $ git --version
   ```
- ***If it outputs a version number for your git, it means that you have git on your computer!      Otherwise, follow the instructions below to install Git.*** 
+ **If it outputs a version number for your git, it means that you have git on your computer!      Otherwise, follow the instructions below to install Git.** 
+ ** For MacOS users, it might ask you to download X-Code command line tools, promptly download it to proceed to the next step** 
   
+ </p>
+</details>
+
+<details><summary>Step 2 - Install Git</summary>
+  ## Install Git
+  
+  ###### Windows Users: 
+  
+  Please follow this link to download Git on your computer. [Download Git] (https://git-scm.com/downloads)
+  
+  
+  ###### MacOS USers:  
+  
+  * If trying $ git --version shows a pop-up window asking you to download xcode command line tools. You would have to install it first to proceed by clicking the ‘install’ button. Or input this command in your terminal: 
+  ```
+  $ xcode-select --install
+  ```
+  
+  * Please follow the instructions on this link to download Git on your computer. [Download Git] (https://git-scm.com/download/mac)
   </p>
 </details>
   
