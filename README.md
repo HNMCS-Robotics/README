@@ -129,8 +129,10 @@ First, we need to see if you have an Ed25519 algorithm SSH key already installed
   # When it prompts you for a location to save the generated key, just push Enter.
   # Next, it will ask you for a password; enter one if you wish, but it’s not required.
   ```
+    
   </p>
 </details>
+
 
 <details><summary>Step 2.3 - Link SSH Key with GitHub </summary>
     <p>
