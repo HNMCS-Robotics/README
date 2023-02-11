@@ -408,11 +408,11 @@ git push origin main
 
 </details>
 
-<details><summary>Pull changes to local computer</summary>
+<details><summary>Pull changes from remote repo to local computer</summary>
 
   <p>
 
-### Pull changes to local computer
+### Pull changes from remote repo to local computer
 
 Reference: [Git Pull - GitHub Git Guides](https://github.com/git-guides/git-pull)
 
