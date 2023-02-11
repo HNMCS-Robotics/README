@@ -512,7 +512,7 @@ Branching in Git is very lightweight and fast!
 <details><summary>Make a new Branch</summary>
   <p>
 
-  #### Make a new Branch
+  ### Make a new Branch
 Let's say we are to add some new features to our index.html page. We are working in our local repository, and we do not want to disturb or possibly wreck the main project.
 
 So we create a new branch, called "hello-world-images":
@@ -586,7 +586,7 @@ git commit -m "modified <file name>"
 <details><summary>Switching between Branches</summary>
   <p>
 
-#### Switching between Branches
+### Switching between Branches
 
 Let's say you want to switch to another branch. Whether it is from **main** to another branch, or a branch that you have created to another one. The steps are still the same:
 
@@ -608,7 +608,7 @@ git checkout main
 <details><summary>Merge Branches</summary>
   <p>
 
-  #### Merge Branches
+  ### Merge Branches
 
   You fixed the bugs in your project, and now you are ready to merge it to **main**, which is the *good copy* of the project. 
 
@@ -632,7 +632,7 @@ git checkout main
 <details><summary>Delete a Branch</summary>
   <p>
 
-  #### Delete a Branch
+  ### Delete a Branch
 
   You fixed your bugs in your project and have merged the changes to main. The branch is no longer needed. You can delete it using this command:
 
