@@ -486,16 +486,117 @@ clear
 
 </details>
 
-## Git - Branches
+## Git Branches
 
 <details><summary>What are Branches</summary>
   <p>
+In Git, a branch is a new/separate version of the main repository.
+
+Let's say you have a large project, and you need to update the design on it. How would that work without and with Git:
+
+* With a new branch called new-design, edit the code directly without impacting the main branch
+* EMERGENCY! There is an unrelated error somewhere else in the project that needs to be fixed ASAP!
+* Create a new branch from the main project called small-error-fix
+* Fix the unrelated error and merge the small-error-fix branch with the main branch
+* You go back to the new-design branch, and finish the work there
+* Merge the new-design branch with main (getting alerted to the small error fix that you were missing)
+
+Branches allow you to work on different parts of a project without impacting the main branch. When the work is complete, a branch can be merged with the main project. You can even switch between branches and work on different projects without them interfering with each other.
+
+Branching in Git is very lightweight and fast!
+  </p>
+
+</details>
+
+<details><summary>Make a new Branch</summary>
+  <p>
+
+  #### Make a new Branch
+Let's say we are to add some new features to our index.html page. We are working in our local repository, and we do not want to disturb or possibly wreck the main project.
+
+So we create a new branch, called "hello-world-images":
+
+```
+git branch hello-world-images
+```
+
+Let's confirm that we have created a new branch:
+
+```
+git branch
+  hello-world-images
+* main
+
+```
+
+We can see the new branch with the name "hello-world-images", but the * beside **main** specifies that we are currently on that branch.
+
+**checkout** is the command used to check out a branch. Moving us from the current branch, to the one specified at the end of the command:
+
+```
+git checkout hello-world-images
+  # Switched to branch 'hello-world-images'
+```
+Now we have moved our current workspace from the master branch, to the new branch. You can open your editor, Visual Studio Code, and make some changes.
+  </p>
+
+</details>
+
+<details><summary>Stage, Commit, Push changes to a Branch</summary>
+  <p>
+
+#### Stage, Commit, Push changes to a Branch
+
+You have made changes to a file and added a new file in the working directory (same directory as the main branch). Now, you want to push your changes to the branch on GitHub. It is similar to the steps that you would follow if you were to push changes to **origin main**.  
+
+**Check the status of the current branch:**
+
+```
+git status
+```
+
+**Add unstaged files to staging environment:**
+
+```
+git add <file name>
+
+  # Or to add all unstaged files to staging environment
+git add .  
+```
+
+**Commit your changes:**
+
+```
+git commit -m "modified <file name>"
+```
 
   </p>
 
 </details>
 
-<details><summary></summary>
+<details><summary>Switching between Branches</summary>
+  <p>
+
+#### Switching between Branches
+
+Let's say you want to switch to another branch. Whether it is from **main** to another branch, or a branch that you have created to another one. The steps are still the same:
+
+```
+git checkout <branch name>
+```
+
+For example:
+
+```
+git checkout main
+```
+
+  </p>
+
+</details>
+
+
+<details><summary>Merge Branches</summary>
   <p>
 
   </p>
