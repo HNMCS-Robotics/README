@@ -435,8 +435,8 @@ Sometimes you might want to use **git fetch**:
 
 </details>
 
-<details>Helpful Terminal Commands<summary></summary>
-  <p>
+<details><summary>Helpful Terminal Commands</summary>
+<p>
 
 ### Helpful Terminal Commands
 
