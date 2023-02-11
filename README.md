@@ -490,6 +490,7 @@ clear
 
 <details><summary>What are Branches</summary>
   <p>
+
 In Git, a branch is a new/separate version of the main repository.
 
 Let's say you have a large project, and you need to update the design on it. How would that work without and with Git:
@@ -555,6 +556,14 @@ You have made changes to a file and added a new file in the working directory (s
 git status
 ```
 
+**Git pull**
+
+It is a good habit to pull the latest changes of the remote repo to your local repo before pushing your changes to the remote repo. This can avoid merge conflicts.
+
+```
+git pull
+```
+
 **Add unstaged files to staging environment:**
 
 ```
@@ -599,13 +608,42 @@ git checkout main
 <details><summary>Merge Branches</summary>
   <p>
 
-  </p>
+  #### Merge Branches
 
+  You fixed the bugs in your project, and now you are ready to merge it to **main**, which is the *good copy* of the project. 
+
+  Here are the steps:
+
+  First, you need to checkout to main
+
+  ```
+  git checkout main
+  ```
+
+  Now, you can merge your changes to **main**. *Remember to replace the brackets with the name of the branch that you would like to merge*
+
+  ```
+  git merge <branch name>
+  ```
+
+  </p>
+</details>
+
+<details><summary>Delete a Branch</summary>
+  <p>
+
+  #### Delete a Branch
+
+  You fixed your bugs in your project and have merged the changes to main. The branch is no longer needed. You can delete it using this command:
+
+  ```
+  git branch -d <branch name>
+  ```
+  </p>
 </details>
 
 <details><summary></summary>
   <p>
 
   </p>
-
 </details>
