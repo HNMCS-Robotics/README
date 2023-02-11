@@ -427,8 +427,62 @@ Git pull updates your current local working branch, and all of the remote tracki
 Git pull is a combination of **git fetch** + **git merge**. **git fetch** updates the remote tracking branches. **git merge** will update your current branch with any new commits on the remote tracking branch.
 
 Sometimes you might want to use **git fetch**:
-* when you are expecting conflicts/failures - you will not have to deal with the conflict right away if you do not **git merge**. 
-* to update all remote tracking branches before losing network connection 
+
+- when you are expecting conflicts/failures - you will not have to deal with the conflict right away if you do not **git merge**.
+- to update all remote tracking branches before losing network connection
+
+  </p>
+
+</details>
+
+<details>Helpful Terminal Commands<summary></summary>
+  <p>
+
+### Helpful Terminal Commands
+
+#### Change Directory
+
+This command will change the directory that you’re currently working with in the Terminal in order to execute other commands on a different directory, view the contents of a different directory or open a file in a different directory.
+
+```
+  #replace <directory> with the name of the directory; exclude <>
+cd <directory>
+
+  #to go to your home directory
+cd ~
+
+  #to go to the parent directory of your current directory
+cd ..
+```
+
+#### Listing all files
+
+Use this command after navigating into a directory using the cd command to view the contents (files and directories) inside of the current directory.
+
+```
+ls
+```
+
+#### Create a directory
+
+This command will allow you to create a directory (folder) right from the CLI. When you need a place to store new files, just use this command to add a new directory in the current working directory, or specify a full path to the location where you want the new directory to be placed.
+
+```
+mkdir newFolder
+```
+
+#### Clear terminal screen
+
+```
+clear
+```
+
+  </p>
+
+</details>
+
+<details><summary></summary>
+  <p>
 
   </p>
 
