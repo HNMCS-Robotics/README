@@ -491,20 +491,23 @@ clear
 <details><summary>What are Branches</summary>
   <p>
 
+Reference: [Git Branch - w3schools](https://www.w3schools.com/git/git_branch.asp?remote=github)
+
 In Git, a branch is a new/separate version of the main repository.
 
 Let's say you have a large project, and you need to update the design on it. How would that work without and with Git:
 
-* With a new branch called new-design, edit the code directly without impacting the main branch
-* EMERGENCY! There is an unrelated error somewhere else in the project that needs to be fixed ASAP!
-* Create a new branch from the main project called small-error-fix
-* Fix the unrelated error and merge the small-error-fix branch with the main branch
-* You go back to the new-design branch, and finish the work there
-* Merge the new-design branch with main (getting alerted to the small error fix that you were missing)
+- With a new branch called new-design, edit the code directly without impacting the main branch
+- EMERGENCY! There is an unrelated error somewhere else in the project that needs to be fixed ASAP!
+- Create a new branch from the main project called small-error-fix
+- Fix the unrelated error and merge the small-error-fix branch with the main branch
+- You go back to the new-design branch, and finish the work there
+- Merge the new-design branch with main (getting alerted to the small error fix that you were missing)
 
 Branches allow you to work on different parts of a project without impacting the main branch. When the work is complete, a branch can be merged with the main project. You can even switch between branches and work on different projects without them interfering with each other.
 
 Branching in Git is very lightweight and fast!
+
   </p>
 
 </details>
@@ -512,7 +515,10 @@ Branching in Git is very lightweight and fast!
 <details><summary>Make a new Branch</summary>
   <p>
 
-  ### Make a new Branch
+Reference: [Git Branch - w3schools](https://www.w3schools.com/git/git_branch.asp?remote=github)
+
+### Make a new Branch
+
 Let's say we are to add some new features to our index.html page. We are working in our local repository, and we do not want to disturb or possibly wreck the main project.
 
 So we create a new branch, called "hello-world-images":
@@ -530,7 +536,7 @@ git branch
 
 ```
 
-We can see the new branch with the name "hello-world-images", but the * beside **main** specifies that we are currently on that branch.
+We can see the new branch with the name "hello-world-images", but the \* beside **main** specifies that we are currently on that branch.
 
 **checkout** is the command used to check out a branch. Moving us from the current branch, to the one specified at the end of the command:
 
@@ -538,7 +544,9 @@ We can see the new branch with the name "hello-world-images", but the * beside *
 git checkout hello-world-images
   # Switched to branch 'hello-world-images'
 ```
+
 Now we have moved our current workspace from the master branch, to the new branch. You can open your editor, Visual Studio Code, and make some changes.
+
   </p>
 
 </details>
@@ -546,9 +554,11 @@ Now we have moved our current workspace from the master branch, to the new branc
 <details><summary>Stage, Commit, Push changes to a Branch</summary>
   <p>
 
+Reference: [Git Branch - w3schools](https://www.w3schools.com/git/git_branch.asp?remote=github)
+
 ### Stage, Commit, Push changes to a Branch
 
-You have made changes to a file and added a new file in the working directory (same directory as the main branch). Now, you want to push your changes to the branch on GitHub. It is similar to the steps that you would follow if you were to push changes to **origin main**.  
+You have made changes to a file and added a new file in the working directory (same directory as the main branch). Now, you want to push your changes to the branch on GitHub. It is similar to the steps that you would follow if you were to push changes to **origin main**.
 
 **Check the status of the current branch:**
 
@@ -570,7 +580,7 @@ git pull
 git add <file name>
 
   # Or to add all unstaged files to staging environment
-git add .  
+git add .
 ```
 
 **Commit your changes:**
@@ -604,27 +614,28 @@ git checkout main
 
 </details>
 
-
 <details><summary>Merge Branches</summary>
   <p>
 
-  ### Merge Branches
+Reference: [Git Branch Merge - w3schools](https://www.w3schools.com/git/git_branch_merge.asp?remote=github)
 
-  You fixed the bugs in your project, and now you are ready to merge it to **main**, which is the *good copy* of the project. 
+### Merge Branches
 
-  Here are the steps:
+You fixed the bugs in your project, and now you are ready to merge it to **main**, which is the _good copy_ of the project.
 
-  First, you need to checkout to main
+Here are the steps:
 
-  ```
-  git checkout main
-  ```
+First, you need to checkout to main
 
-  Now, you can merge your changes to **main**. *Remember to replace the brackets with the name of the branch that you would like to merge*
+```
+git checkout main
+```
 
-  ```
-  git merge <branch name>
-  ```
+Now, you can merge your changes to **main**. _Remember to replace the brackets with the name of the branch that you would like to merge_
+
+```
+git merge <branch name>
+```
 
   </p>
 </details>
@@ -632,13 +643,16 @@ git checkout main
 <details><summary>Delete a Branch</summary>
   <p>
 
-  ### Delete a Branch
+Reference: [Git Branch Merge - w3schools](https://www.w3schools.com/git/git_branch_merge.asp?remote=github)
 
-  You fixed your bugs in your project and have merged the changes to main. The branch is no longer needed. You can delete it using this command:
+### Delete a Branch
 
-  ```
-  git branch -d <branch name>
-  ```
+You fixed your bugs in your project and have merged the changes to main. The branch is no longer needed. You can delete it using this command:
+
+```
+git branch -d <branch name>
+```
+
   </p>
 </details>
 
