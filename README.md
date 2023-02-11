@@ -656,8 +656,3 @@ git branch -d <branch name>
   </p>
 </details>
 
-<details><summary></summary>
-  <p>
-
-  </p>
-</details>
