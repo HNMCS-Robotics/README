@@ -546,7 +546,7 @@ Now we have moved our current workspace from the master branch, to the new branc
 <details><summary>Stage, Commit, Push changes to a Branch</summary>
   <p>
 
-#### Stage, Commit, Push changes to a Branch
+### Stage, Commit, Push changes to a Branch
 
 You have made changes to a file and added a new file in the working directory (same directory as the main branch). Now, you want to push your changes to the branch on GitHub. It is similar to the steps that you would follow if you were to push changes to **origin main**.  
 
