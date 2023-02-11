@@ -318,6 +318,9 @@ Here are all the that you would type in your terminal to complete all of those s
 _Commands that begins with # are comments. Do not type them into your terminal_
 
 ```
+  # Ideally you should be git pull-ing to ensure the local repo reflects the remote repo before doing these steps
+  # Go to topic 'Pull changes to local computer" to learn more about git pull
+
   # *Optional* Check Git Status - files that are unstaged will be coloured red;
   # files that are staged will be coloured green
 git status
@@ -405,8 +408,27 @@ git push origin main
 
 </details>
 
-<details><summary>Pull changes to local computer</summary>
+details><summary>Pull changes to local computer</summary>
+
   <p>
+
+### Pull changes to local computer
+
+Reference: [Git Pull - GitHub Git Guides](https://github.com/git-guides/git-pull)
+
+If you are know what you are doing, here is the command. But, you should continue reading if you are new to this concept.
+
+```
+git pull
+```
+
+Git pull updates your current local working branch, and all of the remote tracking branches. You should make it a habit to run git pull right before you push your changes to branches and regularly on the branches (repos) you are working on locally. It is also a good idea to run **git status** before **git pull** to avoid changes to be overwritten during git pull.
+
+Git pull is a combination of **git fetch** + **git merge**. **git fetch** updates the remote tracking branches. **git merge** will update your current branch with any new commits on the remote tracking branch.
+
+Sometimes you might want to use **git fetch**:
+* when you are expecting conflicts/failures - you will not have to deal with the conflict right away if you do not **git merge**. 
+* to update all remote tracking branches before losing network connection 
 
   </p>
 
