@@ -408,7 +408,7 @@ git push origin main
 
 </details>
 
-details><summary>Pull changes to local computer</summary>
+<details><summary>Pull changes to local computer</summary>
 
   <p>
 
