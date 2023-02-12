@@ -69,3 +69,26 @@ This role is typically granted to external collaborators such as freelancers, co
 Can manage the billing settings (payment information)
 
 </br>
+
+### Branch Protection
+
+Step-by-step guide to create a Branch protection rule: [Managing a branch protection rule - GitHub Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
+
+You can protect important branches by setting branch protection rules, which define whether collaborators can delete or force push to the branch and set requirements for any pushes to the branch, such as passing status checks or a linear commit history.
+
+You can enforce certain workflows or requirements before a collaborator can push changes to a branch in your repository, including merging a pull request into the branch, by creating a branch protection rule. You can apply rules on a specific branch, all the branches, or any branch with a keyword. 
+
+*For example*: We can protect the **main** branch by restricting so that only Admins can merge to **main**. Members can only commit and push to other branches. Pull requests are required and it must be reviewed by code owner before being merged to a protected branch.
+
+By default:
+
+* Branch protection rules disables "force pushes" to the branch and prevents the branch from being deleted. *This can be enabled in the settings while creating the branch protection rule
+
+* Restrictions of branch protection rules **will not** apply to members with admin access to the repository. 
+
+* Protected branch cannot be deleted. When you enable deletion of a protected branch, anyone with at least write permissions to the repository can delete the branch.
+
+Here are some examples for rules that can be applied to branches: 
+
+* [Require status checks before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#require-status-checks-before-merging) : to ensure that the branch must be of a certain status  before collaborators can make changes to a protected branch. The default status check is **Strict**, it make sures that "the branch must be up to date with the base branch before merging".
+
