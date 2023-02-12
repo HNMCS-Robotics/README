@@ -38,7 +38,6 @@ git --version
 
 **For MacOS users, it might ask you to download X-Code command line tools, promptly download it to proceed to the next step. While you are waiting for the download, you skip step 1 and proceed to Step 2.0 but make sure to go back to step 1 to download Git.**  
 
-<br/>
 
 </p>
 </details>
