@@ -36,11 +36,11 @@ git --version
 
 **If it outputs a version number for your git, it means that you have git on your computer! Otherwise, follow the instructions below to install Git.**
 
-**For MacOS users, it might ask you to download X-Code command line tools, promptly download it to proceed to the next step. While you are waiting for the download, you skip step 1 and proceed to Step 2.0 but make sure to go back to step 1 to download Git.**
+**For MacOS users, it might ask you to download X-Code command line tools, promptly download it to proceed to the next step. While you are waiting for the download, you skip step 1 and proceed to Step 2.0 but make sure to go back to step 1 to download Git.**  
 
-  
-  
- </p>
+<br/>
+
+</p>
 </details>
 
 <details><summary>Step 1 - Install Git</summary>
