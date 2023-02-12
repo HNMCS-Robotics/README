@@ -210,7 +210,7 @@ When you clone a repository, you are "pulling" a full copy of all the data of th
 
 ### Clone a repository
 
-[Instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+Reference: [Cloning a repository - GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 **Steps**
 
