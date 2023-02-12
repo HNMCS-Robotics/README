@@ -6,19 +6,47 @@ You can use organizations to collaborate with an unlimited number of people acro
 
 You can create teams which allows you easily manage permission controls of all the members. Teams give people access to the organization’s code, making it easy to add or remove people to many repositories at once.
 
-### Helpful Links
+### Helpful Links for instructions/guides
 
 [The Ultimate Manual for Managing Teams and Organizations in GitHub](https://nira.com/managing-teams-and-organizations-in-github/)
 
 [Creating a new organization from scratch - GitHub Docs](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch)
 
+[Adding People to your Organization - GitHub Docs](https://docs.github.com/en/enterprise-server@3.6/organizations/managing-membership-in-your-organization/adding-people-to-your-organization)
 
-<details><summary>Roles in an Organization</summary>
-  <p>
+[Remove a member from your Organization - GitHub Docs](https://docs.github.com/en/enterprise-server@3.6/organizations/managing-membership-in-your-organization/removing-a-member-from-your-organization)
 
-Reference: [Creating a new organization from scratch - GitHub Docs](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch)
+### Managing User Access to Repositories
+
+You can give organization members, outside collaborators, and teams of people different levels of access to repositories owned by an organization by assigning them to roles.
+
+**From the least access to the most access**
+
+* **Read:** Recommended for non-code contributors who want to view or discuss your project
+
+* **Triage:** Recommended for contributors who need to proactively manage issues and pull requests without write access
+
+* **Write:** Recommended for contributors who actively push to your project
+
+* **Maintain:** Recommended for project managers who need to manage the repository without access to sensitive or destructive actions
+
+* **Admin:** Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository
+
+More details on the access of each role can found [here](https://docs.github.com/en/enterprise-server@3.6/organizations/managing-user-access-to-your-organizations-repositories/repository-roles-for-an-organization).
+
+#### Base Permissions
+
+You can set base permissions that apply to all members of an organization when accessing any of the organization's repositories. Base permissions do not apply to outside collaborators. 
+
+If someone with admin access to an organization's repository grants a member a higher level of access for the repository, the higher level of access overrides the base permission.
+
+Here is the step-by-step guide to set base permissions for an Organization: [Setting base permissions for an Organization - GitHub Docs](https://docs.github.com/en/enterprise-server@3.6/organizations/managing-user-access-to-your-organizations-repositories/setting-base-permissions-for-an-organization)
+
+</br>
 
 ### Roles in an Organization
+
+Reference: [Creating a new organization from scratch - GitHub Docs](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch)
 
 * Organization owners – 
 
@@ -40,5 +68,4 @@ This role is typically granted to external collaborators such as freelancers, co
 
 Can manage the billing settings (payment information)
 
-  </p>
-</details>
+</br>
