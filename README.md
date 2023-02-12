@@ -36,8 +36,9 @@ git --version
 
 **If it outputs a version number for your git, it means that you have git on your computer! Otherwise, follow the instructions below to install Git.**
 
-**For MacOS users, it might ask you to download X-Code command line tools, promptly download it to proceed to the next step. While you are waiting for the download, you skip step 1 and proceed to Step 2.0 but make sure to go back to step 1 to download Git.**  
+**For MacOS users, it might ask you to download X-Code command line tools, promptly download it to proceed to the next step. While you are waiting for the download, you skip step 1 and proceed to Step 2.0 but make sure to go back to step 1 to download Git.**
 
+<br/>
 
 </p>
 </details>
@@ -60,7 +61,10 @@ xcode-select --install
 ```
 
 - Please follow the instructions on this link to download Git on your computer. [Download Git](https://git-scm.com/download/mac)
-  </p>
+
+<br/>
+
+</p>
 </details>
 
 <details><summary> Step 2.0 - Create GitHub Account</summary>
@@ -73,7 +77,7 @@ Create or login to your GitHub Account [here](https://github.com/login) .
 </details>
 
 <details><summary>Step 2.1 - Configure Git with GitHub</summary>
-  <p>
+<p>
 
 ### Configure Git with GitHub
 
@@ -128,6 +132,8 @@ echo .DS_Store >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
+<br/>
+
   </p>
 </details>
 
@@ -153,7 +159,7 @@ ssh-keygen -t ed25519 -C <youremail>
 # When it prompts you for a location to save the generated key, just push Enter.
 # Next, it will ask you for a password; enter one if you wish, but it’s not required.
 ```
-
+<br/>
   </p>
 </details>
 
