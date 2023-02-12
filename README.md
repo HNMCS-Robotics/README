@@ -211,13 +211,13 @@ You **should not** create a README file if you wish to upload projects from your
 <details><summary>Clone remote repository to Local Computer</summary>
   <p>
 
+### Clone a repository
+
 When you create a repository on GitHub, it exists as a remote repository. You can clone your repositories to create a local copy on your computer and sync between the two locations.
 
 When you clone a repository, you are "pulling" a full copy of all the data of the repository that GitHub has. You can clone your own existing repository or clone antoher person's existing repository to contribute to a project.
 
 **The following steps works for both empty repositories and repositories with existing files.**
-
-### Clone a repository
 
 Reference: [Cloning a repository - GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
