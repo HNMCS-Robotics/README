@@ -72,7 +72,7 @@ xcode-select --install
 ### Create GitHub Account
 
 Create or login to your GitHub Account [here](https://github.com/login) .
-
+<br/>
   </p>
 </details>
 
@@ -183,7 +183,7 @@ You need to tell GitHub what your SSH Key is so that you can push your code with
   Highlight and copy the output, which starts with ssh-ed25519 and ends with your email address.
 
 Now, go back to GitHub in your browser window and paste the key you copied into the key field. Then, click **Add SSH key**. You’re done! You’ve successfully added your SSH key!
-
+<br/>
 </p>
 </details>
   
@@ -201,7 +201,7 @@ To put your projects up on GitHub, you will need to create a repository for it t
 **Note**
 
 You **should not** create a README file if you wish to upload projects from your local computer to GitHub, therefore you should leave it unchecked. You can read more about uploading local repositories to GitHub under 'Upload Local projects to GitHub'.
-
+<br/>
   </p>
 
 </details>
@@ -248,7 +248,7 @@ Reference: [Cloning a repository - GitHub Docs](https://docs.github.com/en/repos
    > remove: Total 10 (delta 1), reused 10 (delta 1)
    > Unpacking objects: 100% (10/10), done.
    ```
-
+<br/>
   </p>
 
 </details>
@@ -306,7 +306,7 @@ git commit -m "First Commit"
 ```
 git push -u origin main
 ```
-
+<br/>
   </p>
 
 </details>
@@ -416,7 +416,7 @@ As an example, you usually run **git push origin main** to push your local chang
 ```
 git push origin main
 ```
-
+<br/>
   </p>
 
 </details>
@@ -443,7 +443,7 @@ Sometimes you might want to use **git fetch**:
 
 - when you are expecting conflicts/failures - you will not have to deal with the conflict right away if you do not **git merge**.
 - to update all remote tracking branches before losing network connection
-
+<br/>
   </p>
 
 </details>
@@ -489,7 +489,7 @@ mkdir newFolder
 ```
 clear
 ```
-
+<br/>
   </p>
 
 </details>
@@ -515,7 +515,7 @@ Let's say you have a large project, and you need to update the design on it. How
 Branches allow you to work on different parts of a project without impacting the main branch. When the work is complete, a branch can be merged with the main project. You can even switch between branches and work on different projects without them interfering with each other.
 
 Branching in Git is very lightweight and fast!
-
+<br/>
   </p>
 
 </details>
@@ -554,7 +554,7 @@ git checkout hello-world-images
 ```
 
 Now we have moved our current workspace from the master branch, to the new branch. You can open your editor, Visual Studio Code, and make some changes.
-
+<br/>
   </p>
 
 </details>
@@ -596,7 +596,7 @@ git add .
 ```
 git commit -m "modified <file name>"
 ```
-
+<br/>
   </p>
 
 </details>
@@ -644,7 +644,7 @@ Now, you can merge your changes to **main**. _Remember to replace the brackets w
 ```
 git merge <branch name>
 ```
-
+<br/>
   </p>
 </details>
 
@@ -660,6 +660,6 @@ You fixed your bugs in your project and have merged the changes to main. The bra
 ```
 git branch -d <branch name>
 ```
-
+<br/>
   </p>
 </details>
