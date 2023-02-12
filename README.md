@@ -200,8 +200,10 @@ To put your projects up on GitHub, you will need to create a repository for it t
 
 **Note**
 
-You **should not** create a README file if you wish to upload projects from your local computer to GitHub, therefore you should leave it unchecked. You can read more about uploading local repositories to GitHub under 'Upload Local projects to GitHub'.
+You **should not** create a README file if you wish to upload projects from your local computer to GitHub, therefore you should leave it unchecked. You can read more about uploading local repositories to GitHub under 'Upload Local projects to GitHub'.  
+
 <br/>
+
   </p>
 
 </details>
