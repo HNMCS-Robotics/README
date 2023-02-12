@@ -16,6 +16,8 @@ You can create teams which allows you easily manage permission controls of all t
 
 [Remove a member from your Organization - GitHub Docs](https://docs.github.com/en/enterprise-server@3.6/organizations/managing-membership-in-your-organization/removing-a-member-from-your-organization)
 
+</br>
+
 ### Managing User Access to Repositories
 
 You can give organization members, outside collaborators, and teams of people different levels of access to repositories owned by an organization by assigning them to roles.
@@ -88,7 +90,4 @@ By default:
 
 * Protected branch cannot be deleted. When you enable deletion of a protected branch, anyone with at least write permissions to the repository can delete the branch.
 
-Here are some examples for rules that can be applied to branches: 
-
-* [Require status checks before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#require-status-checks-before-merging) : to ensure that the branch must be of a certain status  before collaborators can make changes to a protected branch. The default status check is **Strict**, it make sures that "the branch must be up to date with the base branch before merging".
-
+Here are some examples for rules that can be applied to branches: [About Branch Protection Settings - GitHub Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#about-branch-protection-settings)
