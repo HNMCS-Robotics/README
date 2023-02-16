@@ -108,7 +108,7 @@ git config --global pull.rebase false
 
 **Optional but helpful commands**
 
-    To enable colorful output with git, type:
+To enable colorful output with git, type:
 
 ```
 git config --global color.ui auto
